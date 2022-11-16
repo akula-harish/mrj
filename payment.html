@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome To MRJ Payment Page</title>
+        <link rel="stylesheet" href="css/payment.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+        <script src="https://kit.fontawesome.com/2935f1ae99.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header_part">
+                    <div class="header_image">
+                        <a href="#">
+                            <img src="img/mrj.png" alt="logo">
+                        </a>    
+                    </div>
+                    <div class="header_txt">
+                        <div class="header_txt_right">
+                            <span class="material-symbols-outlined">
+                                verified_user
+                            </span>
+                        </div> 
+                        <div class="secure"> 
+                            <a href="#">
+                                <h3>100 % SECURE</h3>
+                            </a>       
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!----------middlepart-------------->
+        <div class="main">
+            <div class="container">
+                <div class="payment_part">
+                    <div class="payment_part_left">
+                        <ul class="view_check">
+                            <li>
+                                <a href="#">
+                                   VIEW BAG
+                                </a>   
+                            </li>
+                            <li>
+                                <span>Checkout</span>
+                            </li>
+                        </ul>
+                        <div class="form_part">
+                            <ul class="form_list" id="form_list_jquery">
+                                <li   class="test1">
+                                    <div class="tick_change">
+                                        <span class="check material-symbols-outlined">
+                                            done_outline
+                                        </span>
+                                        <p id="input_name_user">
+                                        </p>
+                                        <div class="change">
+                                            <button type="submit" id="change_btn">CHANGE</button>
+                                        </div>
+                                    </div>
+                                    <span>1.LOGIN</span>
+                                    <div class="form_dis form_vis">
+                                        <div class="form_login_part">
+                                            <p class="email_txt">ENTER EMAIL ADDRESS</p>
+                                        
+                                            <div class="form_login">
+                                                <div class="form_login_user">
+                                                    <form id="loginForm">
+                                                        <div class="form_inputs">
+                                                            <label>Email</label>
+                                                            <input type="email" id="mail_get" required> 
+                                                        </div>
+                                                        <div class="form_inputs">
+                                                            <label>Password</label>
+                                                            <input type="password">
+                                                        </div>
+                                                        <div class="form_inputs" >
+                                                            <button type="submit" id="login">LOGIN TO CONTINUE</button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="frgt_txt">
+                                                        <ul class="frgt_txt_list">
+                                                            <li>
+                                                                NOT REGISTERED?<span>SIGNUP</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>FORGOT PASSWORD</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form_login_guest">
+                                                    <div class="guest_part">
+                                                        <span>NO ACCOUNT? NO PROBLEM.</span>
+                                                        <p>Continue to checkout without an account.</p>
+                                                        <div class="form_inputs ggg">
+                                                            <button type="submit" class="guest_btn">CONTINUE WITH GUEST</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </li>
+
+                                <li class="ship"><!--------shipping address----->
+                                    <div class="tick_change ship_getk">
+                                        <span class="check material-symbols-outlined">
+                                            done_outline
+                                        </span>
+                                        <p id="input_name_user" class="home_p">Home Address </p>
+                                        <div class="change">
+                                            <button type="submit" id="change_btn" class="second-change">CHANGE</button>
+                                        </div>
+                                    </div>
+                                    <span>2.SHIPPING ADDRESS</span>
+                                    <div class="shipping_address"><!----inside------->
+                                        <div class="add_new">
+                                            <p class="text">There is no saved address</p>
+                                            <div class="add_btn">
+                                                <button type="submit" id="add_new_btn">ADD A NEW ADDRESS</button>
+                                            </div>    
+                                        </div>
+                                        <div class="add_new_form">
+                                            <form class="new_form" id="new_reg_form">
+                                                <div class="reg_form_inputs">
+                                                    <label>Address Name</label>
+                                                    <input type="text"  id="one"  required>
+                                                </div>
+                                                <div class="reg_form_inputs">
+                                                    <label>Country</label>
+                                                    <input type="text"  id="two">
+                                                </div>
+                                                <div class="reg_form_inputs">
+                                                    <label>Address Line1</label>
+                                                    <input type="text"  id="three">
+                                                </div>
+                                                <div class="reg_form_inputs">
+                                                    <label>Address Line2</label>
+                                                    <input type="text"  id="four">
+                                                </div>
+                                                <div class="reg_form_inputs">
+                                                    <label>Zip Code / Postal Code</label>
+                                                    <input type="text"  id="five">
+                                                </div>
+                                                <div class="reg_form_inputs">
+                                                    <label for="state">State</label>
+                                                    <select name="state" id="state">
+                                                        <option value="rigatoni">TS</option>
+                                                        <option value="dave">AP</option>
+                                                        <option value="pumpernickel">BP</option>
+                                                        <option value="reeses">CP</option>
+                                                    </select>
+                                                </div>
+                                                <div class="phone reg_form_inputs">
+                                                    <label>Phone Number</label>
+                                                    <input type="number" id="six">
+                                                </div>
+                                                <div class="reg_form_checkbox">
+                                                    <input type="checkbox" id="check">
+                                                    <label for="check">Email me about hot items, great savings, and more.</label>
+                                                </div>
+                                                <div class="add_address_button">
+                                                    <button type="submit" id="add_home_btn">ADD ADDRESS</button>
+                                                    <button type="button" id="cancel_btn">CANCEL</button>
+                                                    <!-- <input type="button" name="reset_form" value="CANCEL " class="mjp-cancel-btn " onclick="this.form.reset()"> -->
+                                                </div>
+                                            </form>
+                                            <div class="form_footer">
+                                                <p>Please note: All SMS communication will be sent on your mobile number</p>
+                                            </div>
+                                        </div>
+                                        <!----------------------Homeaddress--------------------->
+                                        <div class="delivery">
+                                            <div class="home_address">
+                                                <div class="home_address_part">
+                                                    <input type="radio" id="home_radio">
+                                                    <label for="home_radio">HOME ADDRESS (ORDER WILL BE DELEVERED TO THIS ADDRESS)</label>
+                                                </div>
+                                                <div class="edit">
+                                                    <button type="submit" id="edit_btn">EDIT ADDRESS</button>
+                                                </div>
+                                            </div>
+                                            <ul class="home_list">
+                                                <li>
+                                                    <div class="home_list_person">
+                                                        <span id="add1"></span>
+                                                        <span id="add2"></span>
+                                                        <span id="add3"></span>
+                                                        <span id="add4"></span>
+                                                        <span id="add5"></span>
+                                                        <span id="add6"></span>
+                                                        <span id="add7"></span>
+                                                        <span id="add8"></span>
+                                                        <span id="radio_btn"></span>
+                                                    </div>
+                                                    <div class="del_here_button">
+                                                        <button type="submit" id="delivery_btn">DELIVERY HERE</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="select_pay_type">
+                                                        <b>Select Payment Method</b>
+                                                        <div class="home_address_payment">
+                                                            <input type="radio" id="html" name="fav_language" value="HTML">
+                                                            <label for="html">Standard $8.99 —— (Free @ $99 today)</label>
+                                                        </div>
+                                                        <div class="home_address_payment">
+                                                            <input type="radio" id="html" name="fav_language" value="HTML">
+                                                            <label for="html">Standard $8.99 —— (Free @ $99 today)</label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li  class="payement_li">
+                                    <div class="tick_change">
+                                        <span class="check material-symbols-outlined">
+                                            done_outline
+                                        </span>
+                                    </div><!----makepayement----->
+                                    <span>3.MAKE PAYMENT</span>
+                                    <div class="make_payment">
+                                        <form id="bill">
+                                            <ul class="bill_payment">
+                                                <li>
+                                                    <div class="first_card">
+                                                        <input type="radio" id="radio">
+                                                        <label for="radio">Credit / Debit / ATM Card</label>
+                                                    </div>
+                                                    <div class="first_card_list">
+                                                        <div class="card_num">
+                                                            <input type="number" placeholder="Enter Card Number">
+                                                        </div>
+                                                        <div class="card_details">
+                                                            <span>Expiry</span>
+                                                                <label for="month">MM</label>
+                                                                <select name="month" id="month">
+                                                                    <option value="rigatoni">MM</option>
+                                                                    <option value="dkjjh">01</option>
+                                                                    <option value="dave">02</option>
+                                                                    <option value="pumpernickel">03</option>
+                                                                    <option value="reeses">04</option>
+                                                                </select>
+                                                                <label for="month">YY</label>
+                                                                <select name="year" id="year">
+                                                                    <option value="rigatoni">YY</option>
+                                                                    <option value="dkjjh">01</option>
+                                                                    <option value="dave">02</option>
+                                                                    <option value="pumpernickel">03</option>
+                                                                    <option value="reeses">04</option>
+                                                                </select>
+                                                        </div>
+                                                        <div class="cvv">
+                                                            <input type="number" placeholder="CVV">
+                                                            <span class="question material-symbols-outlined">
+                                                                help
+                                                            </span>
+                                                        </div>
+                                                        <p>Your card detailed would be securely saved for faster payments. Your CVV will not be stored. <span>More Info</span></p>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="first_card">
+                                                        <input type="radio" id="radio_two">
+                                                       <label for="radio_two">PayPal [Express Checkout]</label>
+                                                    </div>
+                                                    <div class="first_card_list">
+                                                        <div class="card_num">
+                                                            <input type="number" placeholder="Enter Card Number">
+                                                        </div>
+                                                        <div class="card_details">
+                                                            <span>Expiry</span>
+                                                                <label for="month">MM</label>
+                                                                <select name="month" id="month">
+                                                                    <option value="rigatoni">MM</option>
+                                                                    <option value="dkjjh">01</option>
+                                                                    <option value="dave">02</option>
+                                                                    <option value="pumpernickel">03</option>
+                                                                    <option value="reeses">04</option>
+                                                                </select>
+                                                                <label for="month">YY</label>
+                                                                <select name="year" id="year">
+                                                                    <option value="rigatoni">YY</option>
+                                                                    <option value="dkjjh">01</option>
+                                                                    <option value="dave">02</option>
+                                                                    <option value="pumpernickel">03</option>
+                                                                    <option value="reeses">04</option>
+                                                                </select>
+                                                        </div>
+                                                        <div class="cvv">
+                                                            <input type="number" placeholder="CVV">
+                                                            <span class="question material-symbols-outlined">
+                                                                help
+                                                            </span>
+                                                        </div>
+                                                        <p>Your card detailed would be securely saved for faster payments. Your CVV will not be stored. <span>More Info</span></p>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="first_card">
+                                                        <input type="radio" id="radio_three">
+                                                        <label for="radio_three">Purchase Order</label>
+                                                    </div>                             
+                                                    <div class="first_card_list">
+                                                        <div class="card_num">
+                                                            <input type="number" placeholder="Enter Card Number">
+                                                        </div>
+                                                        <div class="card_details">
+                                                            <span>Expiry</span>
+                                                                <label for="month">MM</label>
+                                                                <select name="month" id="month">
+                                                                    <option value="rigatoni">MM</option>
+                                                                    <option value="dkjjh">01</option>
+                                                                    <option value="dave">02</option>
+                                                                    <option value="pumpernickel">03</option>
+                                                                    <option value="reeses">04</option>
+                                                                </select>
+                                                                <label for="month">YY</label>
+                                                                <select name="year" id="year">
+                                                                    <option value="rigatoni">YY</option>
+                                                                    <option value="dkjjh">01</option>
+                                                                    <option value="dave">02</option>
+                                                                    <option value="pumpernickel">03</option>
+                                                                    <option value="reeses">04</option>
+                                                                </select>
+                                                        </div>
+                                                        <div class="cvv">
+                                                            <input type="number" placeholder="CVV">
+                                                            <span class="question material-symbols-outlined">
+                                                                help
+                                                            </span>
+                                                        </div>
+                                                        <p>Your card detailed would be securely saved for faster payments. Your CVV will not be stored. <span>More Info</span></p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!----------paymentrightpart-------------->
+                    <div class="payment_part_right">
+                            <div class="order">
+                                <h2>Order Review</h2>
+                            </div>
+                            <div class="btn">
+                                <button>Apply Coupon</button>
+                            </div>
+                            <div class="order_list">
+                                <p>
+                                    <span>Subtotal (2 item)</span>
+                                    <b>$20.00</b>
+                                </p>
+                                <p>
+                                    <span>Shipping</span>
+                                    <b>$6.92</b>
+                                </p>
+                                <p>
+                                    <span>Est. taxes & fees</span>
+                                    <b>$2.00</b>
+                                </p>
+                                <p>
+                                    <span>Est. total</span>
+                                    <b>$28.92</b>
+                                </p>
+                            </div>
+                            <div class="place">
+                                <button onclick="window.open('payment.html')">PLACE ORDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!--------------------------------footer_top------------------------->
+    <footer>    
+        <div class="footer_top">
+            <div class="container">
+                <ul class="footer_top_main">
+                    <li>
+                        <ul class="footer_top_list">
+                            <li><p>FASTENERS</p></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Home & Living</a></li>
+                            <li><a href="#">Discover</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="footer_top_list">
+                            <li><p>ONLINE SHOPPING</p></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Vendor Code of Conduct</a></li>
+                            <li><a href="#">Home & Living</a></li>
+                            <li><a href="#">Discover</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="footer_top_list">
+                            <li><p> OUR POLICIES</p></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Vendor Code of Conduct</a></li>
+                            <li><a href="#">Home & Living</a></li>
+                            <li><a href="#">Whitehat</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="footer_top_list">
+                            <li><p>SUBSCRIBE TO NEWSLETTERS</p></li>
+                            <li>
+                                <div class="form">
+                                    <form>
+                                        <input type="email" class="email" required>
+                                        <input type="submit" class="submit" value="SUBSCRIBE">
+                                    </form>
+                                </div>
+                                <div class="map">
+                                    <span>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="address">
+                                        <span>633 Skokie Blvd</span>
+                                        <span>Suite 490</span>
+                                        <span>Clair Mel,FL 33619</span>
+                                        <span>United States</span>
+                                    </div>    
+                                </div>    
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!--------------------------------------------------------footer_below-------------------------------------------->  
+          <div class="footer_below">
+            <div class="container">
+                <ul class="footer_below_content">
+                     <li>
+                        <div class="footer_copy_right">
+                            <p><b>©Pre Retailer</b> 2019 Powered by Sellers Commerce </p>  
+                        </div>
+                     </li>
+                     <li>
+                        <ul class="footer_icons">
+                            <li>
+                                <a href="#">
+                                    <span class="social_media">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>    
+                                <a href="#">
+                                    <span class="social_media">
+                                        <i class="fa-brands fa-square-twitter"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>    
+                                <a href="#">
+                                    <span class="social_media">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>    
+                                <a href="#">
+                                    <span class="social_media">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </li>    
+                        </ul>    
+                     </li>
+                </ul>
+            </div>
+          </div> 
+    </footer>   
+
+    <!------------------sign_up_page--------------------------->
+
+    <div class="signup_page signup_page_open">
+        <div class="signup">
+            <b>SIGN UP</b>
+            <span class="close material-symbols-outlined">
+                close
+            </span>
+            <p><span>Signup makes your shopping</span> experience better.</p>
+        </div>
+        <div class="signup_form">
+            <form>
+                <div class="signup_form_group">
+                    <input type="text" placeholder="First name" required>
+                </div>
+                <div class="signup_form_group">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div class="signup_form_group">
+                    <input type="number" placeholder="Mobile number">
+                </div>
+                <div class="signup_form_group">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="signup_form_group">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="signup_form_group">
+                    <input type="password" placeholder="Confirm password">
+                </div>
+                <p>NOTE : Password is case sensitive</p>
+                <div class="signup_form_group">
+                    <input type="submit" value="SIGN UP" class="signup_button">
+                </div>
+               
+            </form>
+        </div>
+    </div>
+    <div class="signup_sides_part signup_sides_part_effects">
+
+    </div>
+    <!---------------------------------------script------------------------------->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <!-----------form-list-jquery-------->
+    <script>
+       $("#form_list_jquery >li").click(function(){
+        $(this).addClass('active')
+        $(this).siblings().addClass('not-allowed') 
+       })
+    </script>
+
+<!------------------sir_way_li---------------------->
+
+<script>
+     $('ul >li > span').on('click' , function(){
+            $(this).parent().addClass('bg_clr');
+            $(this).siblings().addClass('active')
+     })
+     $('#loginForm').on('submit', function(){
+        let getnamess = $('#mail_get').val();
+        $('#input_name_user').text(getnamess)
+        $(".tick_change").addClass('tick')
+        $('.ship').removeClass('ship');
+        $('.form_dis').removeClass('active')
+        $('.test1').removeClass('bg_clr').addClass('has_cmp');
+        return false
+        })
+
+        $("#change_btn").click(function(){
+        $('#input_name_user').text('')
+        $(".tick_change").removeClass('tick')
+        $('.ship').addClass('ship');
+        $('.form_dis').addClass('active')
+        $('.test1').addClass('bg_clr').removeClass('has_cmp');
+          
+        });
+
+        $(".ship").click(function(){
+            $(this).removeClass('not-allowed').addClass('bg_clr')
+            $('.add_new').addClass('active')
+            
+        });
+
+        $("#add_new_btn").on('click' , function(){
+           
+            $(".add_new").addClass('hide') ;          
+
+            $(".add_new_form").addClass('active')
+            // $('.add_new').removeClass('add_new');
+            // $("#add_new_btn").remove();
+        });
+
+        $('#new_reg_form').on("submit",function(){
+                let firstname = $('#one').val();
+                let firstname1 = $('#two').val();
+                let firstname2 = $('#three').val();
+                let firstname3 = $('#four').val();
+                let firstname4 = $('#five').val();
+                let firstname5 = $('#state').val();
+                let firstname6 = $('#six').val();
+                // let radio_get=$("#html").val();
+                $('#add1').text(firstname);
+                $('#add2').text(firstname1 +" " +firstname2);
+                $('#add3').text(firstname2);
+                $('#add4').text(firstname3);
+                $('#add5').text(firstname4);
+                $('#add6').text(firstname5);
+                $('#add7').text(firstname6);
+                // $('#radio_btn').text(radio_get);
+                // $('#add8').removeClass('mj-visble');
+                // $('#add9').addClass('mj-visble');
+                $(".add_new_form").removeClass('active')
+                $('.delivery').addClass('open')
+                $('.add_new_form ').removeClass('open')
+                return false;
+        });
+       
+
+
+        
+        // $('#add_new_btn').on('submit', function(){
+        // let add_one = $('#one').val();
+        // let add_two = $('#two').val();
+        // $("#add1").text(add_one)
+        // $("#add2").text(add_two) 
+        //    return false
+        // })
+        // $('#new_reg_form').on('submit', function(){
+        // let getnames = $('#one').val();
+        // $('#input_name_user').text(getnames)
+        // $(".tick_change").addClass('tick')
+        // $('.ship').removeClass('ship');
+        // $('.form_dis').removeClass('active')
+        // $('.test1').removeClass('bg_clr').addClass('has_cmp');
+        // return false
+        // })
+
+        
+
+      
+            
+</script>
+
+
+     <script>
+           $(document).ready(function(){
+           $(".guest_btn").click(function(){
+           $(".signup_page").addClass();
+        });
+        });
+     </script>
+     <!---------------------------------cntnu_wth_guest---------------------------->
+     <script>
+            $(document).ready(function(){
+            $(".ggg>button").on('click' , function(){
+            $(".signup_page").toggleClass("active");
+            });
+            });
+
+            $(".close").click(function(){
+            $(".signup_page").removeClass("active");
+            });
+     </script>
+
+     <script>/*script signup bgclr change*/
+             $(document).ready(function(){
+            $(".ggg>button").on('click' , function(){
+            $(".signup_sides_part_effects").toggleClass("active");
+            });
+            });
+
+            $(".close, .signup_sides_part").click(function(){
+            $(".signup_sides_part_effects").removeClass("active");
+            $(".signup_page_open").removeClass("active");
+            });
+
+           
+     </script>
+
+
+<!-------------------------------edit_btn_jquery------------------------>
+<script>
+    $("#edit_btn").on('click', function(){
+            $(".add_new_form").addClass('open')
+            $(".delivery").removeClass("open")
+            $('#add_home_btn').text('UPDATE ADDRESS');
+    });
+   
+</script>
+
+<!-----------------------------cancel_button------------------------------>
+<script>
+    $("#cancel_btn").click(function(){
+       $(".add_new_form").removeClass('open')
+       $(".add_new").removeClass('hide')
+        $(".delivery").removeClass('open')
+    })
+
+</script>
+<!---------------second li tick change---------------->
+<script>
+    $("#delivery_btn").on('click',function(){
+        $(".ship_getk").addClass('sss')
+        $(".delivery").hide()
+    })
+
+</script>
+<!------------------second li change------------------>
+<script>
+    $(".second-change").click(function(){
+        $(".delivery").show()
+    })
+</script>
+
+<script>
+   
+     $("#change_btn").click(function(){
+        $(".delivery").addClass('active')
+     })
+
+
+    //  $('.mjp-delivar').click(function(){
+    //         $(this).parent().parent().parent().parent().parent().parent().addClass('mjp-complete');
+    //         $(this).parent().parent().parent().parent().parent().parent().removeClass('mjp-bgclr');
+    //         $('.mj-cout-det >li').removeClass('mj-pmnt');
+    //         var home = $('#home').text();
+    //         $('#home1').text(home);
+    //       });
+</script>
+
+
+
+    </body>             
+</html>
